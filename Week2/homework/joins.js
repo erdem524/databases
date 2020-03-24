@@ -4,7 +4,7 @@ const connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'hyfuser',
 	password: 'hyfpassword',
-	database: 'mydata'
+	database: 'academy'
 });
 const execQuery = util.promisify(connection.query.bind(connection));
 
