@@ -12,7 +12,7 @@ async function seedData() {
 	const authersConf = `SELECT a.author_name AS Name , b.author_name AS Friend FROM Authors a, 
                          Authors b where a.author_no = b.friend`;
 
-	const printAllCol = `SELECT * FROM Authors AS A LEFT JOIN research_papers
+	const printAllCol = `SELECT * FROM Authors AS A LEFT JOIN rsrch_papers
                          AS B on b.author_id= a.author_no`;
 
 	connection.connect();
