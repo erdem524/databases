@@ -11,8 +11,8 @@ const connection = mysql.createConnection({
 const execQuery = util.promisify(connection.query.bind(connection));
 
 async function seedData() {
-	const createData = `CREATE DATABASE IF NOT EXISTS COMPANY`;
-	const useData = `use COMPANY`;
+	const createData = `CREATE DATABASE IF NOT EXISTS academy`;
+	const useData = `use academy`;
 
 	const createAuthorsTable = `
 	CREATE TABLE IF NOT EXISTS Authors
