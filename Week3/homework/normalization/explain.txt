@@ -1,0 +1,45 @@
+What are the super, candidate, primary keys ?
+
+superkeys 
+A superkey is a single or multiple keys which identifies rows in a table
+it means every column can be a super key. 
+
+here are superkey from dinner_dtl 
+dinner_id | dinner_date | venue_code | venue_description | food_no
+
+candidate keys
+candidate keys are  set of attributes that Uniquely identify each record in a table.
+The Primary key should be selected from the candidate keys.
+
+here are candidatekeys from dinner_dtl 
+| dinner_id | venue_code | food_no 
+
+
+ALTERNATE KEYS 
+Alternate Key is a column or group of columns in a table that uniquely identify every row in that table. 
+it is the columns that can replace primary key in a table. 
+
+here are Alternate Key from dinner_dtl 
+| venue_code | food_no 
+
+PRIMARY KEY
+ primary key is PRIMARY KEY is a column or group of columns in a table that
+  uniquely identify every row in that table.There can be only one primary key in table. 
+
+here are primary key from dinner_dtl 
+| dinner_id | 
+
+in a word
+super keys > candidate keys>  primary key, Alternate keys
+
+
+
+What are the potential relationships between different possible tables ?
+
+1NF includes everything, then we separate every possible dependencies into new tables. 
+then new tables would have 1 to 1, 1 to many, many to many relationships with each other. 
+in the 2NF we seperated 1NF into several tables, and connected them with foreign keys. 
+in 3NF we seperated 2NFs until to root so that there is no Transitive Dependency.
+then we connected them with foreign keys. 
+
+
